@@ -6,8 +6,8 @@
 .input {
   border: none;
   border-radius: 0;
-  padding: 5%;
-  width: 80%;
+  padding: 2%;
+  width: 130%;
   font-size: 1.2em;
 }
 
@@ -21,8 +21,8 @@ select:focus {
   color: #fff !important;
   text-transform: uppercase;
   text-decoration: none;
-  background: #d86632;
-  padding: 20px;
+  background: #bf5050;
+  padding: 10px;
   display: inline-block;
   border: none;
   width: 20%;
