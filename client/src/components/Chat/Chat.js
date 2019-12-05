@@ -18,7 +18,7 @@ const Chat = ({ location }) => {
   const [users, setUsers] = useState("");
   const [message, setMessage] = useState("");
   const [messages, setMessages] = useState([]);
-  const ENDPOINT = "http://localhost:5001/";
+  const ENDPOINT = "https://react-pikka.herokuapp.com/";
 
   useEffect(() => {
     const { name, room } = queryString.parse(location.search);
@@ -61,8 +61,8 @@ const Chat = ({ location }) => {
   };
 
   return (
-    <div className='outerContainer'>
-      <div className='container'>
+    <div className="outerContainer">
+      <div className="container">
         <InfoBar room={room} />
         <Messages messages={messages} name={name} />
         <Input

@@ -1,7 +1,7 @@
 import React from "react";
 import { GiTruck } from "react-icons/gi";
 
-import onlineIcon from "../../icons/onlineIcon.png";
+// import onlineIcon from "../../icons/onlineIcon.png";
 import closeIcon from "../../icons/closeIcon.png";
 
 import "./InfoBar.css";
