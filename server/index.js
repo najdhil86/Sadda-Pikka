@@ -13,7 +13,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 // Database configuration
-const databaseUrl = "mongodb://localhost:27017/pikka_db";
+const databaseUrl = "mongodb://<naj>:<-dinDHnwudVF!6HFLu7->@ds215388.mlab.com:15388/heroku_vjn4w5z0";
 const collections = ["messages"];
 // Hook mongojs config to db variable
 const db = mongojs(databaseUrl, collections);
