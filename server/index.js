@@ -13,7 +13,7 @@ const server = http.createServer(app);
 const io = socketio(server);
 
 // Database configuration
-const databaseUrl = "mongodb://<naj>:<-dinDHnwudVF!6HFLu7->@ds215388.mlab.com:15388/heroku_vjn4w5z0";
+const databaseUrl = "mongodb://<naj>:<-dinDHnwudVF!6HFLu7-><-dinDHnwudVF!6HFLu7->@ds215388.mlab.com:15388/heroku_vjn4w5z0";
 const collections = ["messages"];
 // Hook mongojs config to db variable
 const db = mongojs(databaseUrl, collections);
@@ -21,11 +21,11 @@ const db = mongojs(databaseUrl, collections);
 app.use(cors());
 app.use(router);
 
-app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-    res.header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
-    next();
+app.use(function (req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  res.header("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
+  next();
 });
 
 
@@ -63,7 +63,7 @@ io.on("connect", socket => {
         user: user.name,
         text: message
       },
-      function(error, savedMsg) {
+      function (error, savedMsg) {
         // Log any errors
         if (error) {
           console.log(error);
