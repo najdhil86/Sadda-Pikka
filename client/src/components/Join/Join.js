@@ -14,7 +14,7 @@ export default function SignIn() {
     <div className="joinOuterContainer">
       <div className="joinInnerContainer">
         <h1 className="heading">
-          <FaTruckLoading /> Welcome to Pikka Chat <GiTruck />{" "}
+          <FaTruckLoading /> Welcome to Pikka Chat! <GiTruck />{" "}
         </h1>
         <div>
           <input
