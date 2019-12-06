@@ -11,7 +11,7 @@ const InfoBar = ({ room }) => (
     <div className="leftInnerContainer">
       <GiTruck size={70} />
       {/* <img className="onlineIcon" src={onlineIcon} alt="online icon" /> */}
-      <h2> Welcome to {room} room</h2>
+      <h2> Welcome to <strong>{room}</strong> room</h2>
     </div>
     <div className="rightInnerContainer">
       <a href="/">
